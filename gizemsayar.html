@@ -3,6 +3,13 @@
 
 <head>
     <title> İlk HTML Projemiz | fta25A </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,17 +45,26 @@
     <div>
         <table>
             <thead>
-                <tr>ALan 1</tr>
-                <tr>ALan 2</tr>
-                <tr>ALan 3</tr>
-                <tr>ALan 4</tr>
+                <tr>
+                    <th colspan="5">Genel Başlık</th>
+                </tr>
+                <tr>
+                    <th>ALan 1</th>
+                    <th>ALan 2</th>
+                    <th>ALan 3</th>
+                    <th>ALan 4</th>
+                    <th>ALan 5</th>
+                </tr>
+               
             </thead>
-            <body>
+            <tbody>
                 <tr>
                     <td>deneme1</td>
                     <td>deneme2</td>
                     <td>deneme3</td>
                     <td>deneme4</td>
+                    <td rowspan="5">deneme5</td>
+                    
                 </tr>
                 <tr>
                     <td>deneme1-1</td>
@@ -68,7 +84,7 @@
                     <td>deneme3-3</td>
                     <td>deneme3-4</td>
                 </tr>
-            </body>
+            </tbody>
         </table>
     </div>
 </body>

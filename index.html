@@ -2,6 +2,13 @@
 <html>
     <head>
         <title> İlk HTML Projemiz | fta25A </title>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h1> Başlık - 1 </h1>
@@ -51,6 +58,52 @@
             </div>
             <div> Sağ Kısım </div>
         </div>
+        <!-- Table Layout -->
+        <table>
+            <thead>
+            <tr>
+                <th colspan="5" height="75"> Header </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="5" height="40"> Kategoriler </td>
+            </tr>
+            <tr>
+                <td rowspan="2" width="250" height="250"> Yan Menü </td>
+                <td colspan="4" width="500" height="125"> Reklam Alanı </td>
+            </tr>
+            <tr>
+                <td colspan="4" width="500" height="500"> Gövde </td>
+            </tr>
+            <tr>
+                <td colspan="5" width="500" height="50"> Footer </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Form Elemanları -->
+        <!-- Kullanıcı Var mı ? -->
+        <!-- Parola Kontrolü : 8 Karakter, Büyük Küçük Harf, Boşluk Karakteri, -->
+        <!-- E-Posta Formatı -->
+        <!-- Türkçe Karakter -->
+        <form method="POST" action="login/control.php">
+            <label for="username"> Kullanıcı Adınızı E-Posta Adresi Olarak Tanımlayınız </label>
+            <input placeholder="Kullanıcı Adı" value="" id="username" name="username">
+
+            <input type="hidden" id="userId" name="userId" value="1234342">
+
+            <input type="password" value="" id="password" name="password">
+            <input type="email" value="" id="email" name="email">
+            <input type="date" value="" id="date" name="date">
+
+            <button type="reset"> Temizle </button>
+            <button type="submit"> Kayıt Ol </button>
+        </form>
+
+        <iframe src="gizemsayar.html" width="900" height="400" id="reklamInclude"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.030471754344!2d29.01675690827703!3d41.11136006568837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5bf15c34913%3A0x19571e96a2eaf2f6!2zTWFzbGFrLCBTYXLEsXllci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1640516665937!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/-4RdNSFynvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
 
@@ -69,4 +122,29 @@
 <section> +
 <summary>
 <time>
+-->
+
+<!--
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
 -->

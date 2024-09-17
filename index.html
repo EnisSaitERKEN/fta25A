@@ -1,1 +1,150 @@
-Deneme HTML Dosyamız...
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> İlk HTML Projemiz | fta25A </title>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Başlık - 1 </h1>
+        <h2> Başlık - 2 </h2>
+        <h3> Başlık - 3 </h3>
+        <h4> Başlık - 4 </h4>
+        <h5> Başlık - 5 </h5>
+        <h6> Başlık - 6 </h6>
+
+        <p> Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. <i>In cursus sapien tellus</i>, a tempus ligula ullamcorper a. <ins>Praesent</ins> ut <q>massa</q> nisi. Ut tempus tincidunt congue. Integer vitae nunc nec ipsum lacinia fermentum. Donec volutpat urna sed massa aliquam, vulputate ultrices nulla sagittis. Morbi placerat tellus nec lacus vulputate, at varius leo venenatis. Etiam ultrices erat nulla, posuere consectetur turpis luctus quis. </p>
+        <p> <del>Lorem ipsum</del> dolor sit amet, consectetur adipiscing elit. <small> In cursus sapien tellus, a tempus ligula ullamcorper a. </small> Praesent ut massa nisi. Ut tempus tincidunt congue. <bdo>Integer vitae nunc nec ipsum lacinia fermentum.</bdo> Donec volutpat urna sed massa aliquam, vulputate ultrices nulla sagittis. Morbi placerat tellus nec lacus vulputate, at varius leo venenatis. Etiam ultrices erat nulla, posuere consectetur turpis luctus quis. </p>
+        <a title="Google Linki Burada" href="https://www.google.com"> Google'a Git </a>
+        <span> Resim URL'den gelen </span> <img src="https://st2.depositphotos.com/3765753/5349/v/950/depositphotos_53491489-stock-illustration-example-rubber-stamp-vector-over.jpg" width="100" height="75" />
+        <span> Resim Dizinden gelen </span> <img src="resimler/resim1.jpg" width="50" height="25" alt="Example Resmi" title="Example Resmi" />
+        <div>
+            <div> 
+                <ul>
+                    <li> 
+                        <ul>
+                            <li> 1. Elemanın listesi </li>
+                            <li> 1. Elemanın listesi </li>
+                            <li> 1. Elemanın listesi </li>
+                        </ul>
+                    </li>
+                    <li> 2. Eleman </li>
+                    <li> 3. Eleman </li>
+                </ul>
+            </div>
+            <div> 
+                <table>
+                    <thead>
+                        <tr colspan="2"> Başlıklar </tr>
+                        <tr> 
+                            <td> Başlık 1 </td>
+                            <td> Başlık 2 </td>
+                            <td> Başlık 3 </td>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <td> İçerik 1 </td>
+                            <td> İçerik 2 </td>
+                            <td> İçerik 3 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div> Sağ Kısım </div>
+        </div>
+        <!-- Table Layout -->
+        <table>
+            <thead>
+            <tr>
+                <th colspan="5" height="75"> Header </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="5" height="40"> Kategoriler </td>
+            </tr>
+            <tr>
+                <td rowspan="2" width="250" height="250"> Yan Menü </td>
+                <td colspan="4" width="500" height="125"> Reklam Alanı </td>
+            </tr>
+            <tr>
+                <td colspan="4" width="500" height="500"> Gövde </td>
+            </tr>
+            <tr>
+                <td colspan="5" width="500" height="50"> Footer </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Form Elemanları -->
+        <!-- Kullanıcı Var mı ? -->
+        <!-- Parola Kontrolü : 8 Karakter, Büyük Küçük Harf, Boşluk Karakteri, -->
+        <!-- E-Posta Formatı -->
+        <!-- Türkçe Karakter -->
+        <form method="POST" action="login/control.php">
+            <label for="username"> Kullanıcı Adınızı E-Posta Adresi Olarak Tanımlayınız </label>
+            <input placeholder="Kullanıcı Adı" value="" id="username" name="username">
+
+            <input type="hidden" id="userId" name="userId" value="1234342">
+
+            <input type="password" value="" id="password" name="password">
+            <input type="email" value="" id="email" name="email">
+            <input type="date" value="" id="date" name="date">
+
+            <button type="reset"> Temizle </button>
+            <button type="submit"> Kayıt Ol </button>
+        </form>
+
+        <iframe src="gizemsayar.html" width="900" height="400" id="reklamInclude"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.030471754344!2d29.01675690827703!3d41.11136006568837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5bf15c34913%3A0x19571e96a2eaf2f6!2zTWFzbGFrLCBTYXLEsXllci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1640516665937!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/-4RdNSFynvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>
+
+<!-- Semantik Etiketler
+<address>
+<article> Makale Metni.. </article>
+<aside> +
+<details>
+<figcaption>
+<figure>
+<footer> +
+<header> +
+<main>
+<mark>
+<nav> +
+<section> +
+<summary>
+<time>
+-->
+
+<!--
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
+-->
